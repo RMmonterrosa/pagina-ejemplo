@@ -1,0 +1,16 @@
+.principal {
+    display: flex; /* Hace que los elementos hijos se comporten como elementos flexibles */
+}
+
+.Tabla, .Formulario {
+    flex: 1; /* Hace que ambos divs ocupen el mismo espacio disponible */
+    margin-right: 20px; /* Margen derecho entre los elementos (opcional) */
+}
+
+.Tabla{
+    margin-left: 20px;
+}
+
+.Form-Detalles {
+    margin-left: 20px;
+}
