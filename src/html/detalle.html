@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de Registro</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalle de registro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilo.css">
+    
+    </head>
 <body>
-    <h1>Detalle de Registro</h1>
-    <form id="detail-form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido">
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad">
-        <label for="estatura">Estatura:</label>
-        <input type="number" step="0.01" id="estatura" name="estatura">
-        <button type="submit">Editar</button>
-        <button id="delete-btn" type="button">Eliminar</button>
-    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><b>Express JS</b></a>
+        <a class="navbar-brand" href="#"> | Grupo #1</a>
+    </nav>
+    
+    <div class="Form-Detalles">
+        <h3>Detalles de Registro</h3>
+        <form id="detail-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control col-6" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control col-6" id="apellido" name="apellido">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" class="form-control col-6" id="edad" name="edad" min="0">
+            </div>
+            <div class="form-group">
+                <label for="estatura">Estatura:</label>
+                <input type="number" step="0.01" class="form-control col-6" id="estatura" name="estatura" min="0">
+            </div>
+            <button type="submit" class="btn btn-primary">Editar</button>
+            <button id="delete-btn" type="button" class="btn btn-danger">Eliminar</button>
+        </form>
+    </div>
+    
+    
+    
+    
+    
 
     <script src="../js/appDetalle.js"></script>
 </body>
+<footer class="bg-body-tertiary text-center text-lg-start" style="position: fixed; bottom: 0; width: 100%;">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">Universidad Católica de El Salvador</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 </html>
 
 

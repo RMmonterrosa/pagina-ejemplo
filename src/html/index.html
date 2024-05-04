@@ -3,40 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Express.js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+
 </head>
 <body>
-    <h1>Tabla de datos</h1>
-    <table id="data-table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Edad</th>
-                <th>Estatura</th>
-                <th>Detalle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Aquí se cargarán los datos dinámicamente -->
-        </tbody>
-    </table>
-
-    <h2>Agregar Nuevo Registro</h2>
-    <form id="add-form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido">
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad">
-        <label for="estatura">Estatura:</label>
-        <input type="number" step="0.01" id="estatura" name="estatura">
-        <button type="submit">Agregar</button>
-    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><b>Express JS</b></a>
+        <a class="navbar-brand" href="#"> | Grupo #1</a>
+    </nav>
+    <div class="principal">
+        <div class="Tabla">
+        <h3>Tabla de datos</h3>
+        <table id="data-table" class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Estatura</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se cargarán los datos dinámicamente -->
+            </tbody>
+        </table>
+        </div>
+        <div class="Formulario">
+            <h3>Agregar nuevo registro</h3>
+            <form id="add-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="edad">Edad:</label>
+                        <input type="number" class="form-control" id="edad" name="edad" min="0">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="estatura">Estatura:</label>
+                        <input type="number" step="0.01" class="form-control" id="estatura" name="estatura" min="0">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Agregar</button>
+            </form>
+            
+            
+        </div>
+        
+    
+        
+    </div>
+    
 
 
     <script src="../js/app.js"></script>
+
+    
 </body>
+<footer class="bg-body-tertiary text-center text-lg-start" style="position: fixed; bottom: 0; width: 100%;">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">Universidad Católica de El Salvador</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 </html>
