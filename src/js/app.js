@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Insertar filas con los datos
             data.forEach(item => {
-                dataTable.innerHTML += `<tr data-id="${item.id}"><td>${item.id}</td><td>${item.nombre}</td><td>${item.apellido}</td><td>${item.edad}</td><td>${item.estatura}</td><td><button class="btn btn-secondary">Detalle</button></td></tr>`;
+                dataTable.innerHTML += `<tr data-id="${item.id}"><td>${item.id}</td><td>${item.nombre}</td><td>${item.apellido}</td><td>${item.edad}</td><td>${item.estatura}</td><td><button class="btn btn-secondary detail-btn">Detalle</button></td></tr>`;
             });
 
             dataTable.innerHTML += '</tbody>'; // Cierra el table body
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const id = row.dataset.id;
                     console.log(row)
                     console.log(id)
-                    window.location.href = `detalle.html?id=${id}`;
+                    window.location.href = `detalle.html?id=${id}`; // Te manda a detalle html
                 });
             });
         } catch (error) {
