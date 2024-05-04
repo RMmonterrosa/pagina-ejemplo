@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const id = row.dataset.id;
                     console.log(row)
                     console.log(id)
-                    window.location.href = `detalle.html?id=${id}`;
+                    window.location.href = `detalle.html?id=${id}`; // Te manda a detalle html
                 });
             });
         } catch (error) {
